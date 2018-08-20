@@ -1,0 +1,5 @@
+chromedriver=./Drivers/chromedriver.exe
+firefoxdriver=./Drivers/geckodriver.exe
+iedriver=./Drivers/IEDriverServer.exe
+testdata=./src/com/initg/data/TestData.csv
+configreader=./src/com/initg/configuration/config.property
