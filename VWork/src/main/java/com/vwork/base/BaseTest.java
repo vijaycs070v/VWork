@@ -1,12 +1,8 @@
 package com.vwork.base;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeMethod;
 
-import com.initg.datahandler.DataReader;
-import com.initg.datahandler.IDataReader;
-import com.initg.utils.BrowserType;
-import com.initg.utils.Utility;
+import com.vwork.datahandler.DataReader;
+import com.vwork.utils.Utility;
 
 public  class BaseTest extends Base {
 	String testcase;

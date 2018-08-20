@@ -2,7 +2,8 @@ package com.vwork.base;
 
 import org.openqa.selenium.WebDriver;
 
-import com.initg.datahandler.IDataReader;
+import com.vwork.datahandler.IDataReader;
+
 
 public class Base {
 	

@@ -2,8 +2,8 @@ package com.vwork.pages;
 
 import org.openqa.selenium.By;
 
-import com.initg.base.Base;
-import com.initg.base.BasePage;
+import com.vwork.base.Base;
+
 
 public class LoginPage extends Base {
 	

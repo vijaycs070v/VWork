@@ -3,8 +3,9 @@ package com.vwork.tests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.initg.base.BaseTest;
-import com.initg.flow.Flow;
+import com.vwork.base.BaseTest;
+import com.vwork.flow.Flow;
+
 
 public class FirstSeleniumScriptTest extends BaseTest{
 
