@@ -1,32 +1,59 @@
 package com.vwork.pages;
 
 import org.openqa.selenium.By;
+import com.vwork.base.BasePage;
 
-import com.vwork.base.Base;
 
-
-public class LoginPage extends Base {
+public class LoginPage extends BasePage {
 	
-	public static By userID=By.xpath("");
-	public static By password=By.xpath("");
-	public static By clickSubmitButton=By.xpath("");
+	private static final By userId=By.xpath("");
+	private static final By password=By.xpath("");
+	private static final By clickSubmitButton=By.xpath("");
 	
-	public void getID()
+	public LoginPage enterUserID() throws Exception
 	{
-		//driver.findElement(userID).sendKeys(getValue("userId"));
-	//	System.out.println(getValue("name"));
-	//	System.out.println(testdataReader.readData("name"));
-		System.out.println(testdataReader.readData("name"));
-		//return this;
-	}
-	/*public LoginPage getPassword()
-	{
-		driver.findElement(password).sendKeys(getValue("password"));
+		try{
+				String id=getValue("userId"); //read user id  value from csv file
+				elementWait(userId);
+				driver.findElement(userId).sendKeys(id);
+		}
+		catch(Exception e)
+		{
+			
+			
+				throw new Exception("Error at the class "+this.getClass().getSimpleName()+"  User id field "+e.getMessage());
+			
+		}
 		return this;
 	}
-	public void clickSubmitButton()
+	public LoginPage enterPassword() throws Exception
 	{
-		driver.findElement(clickSubmitButton).click();
-	}*/
+		try{
+				String pwd=getValue("password"); //read password  value from csv file
+				elementWait(password);
+				driver.findElement(password).sendKeys(pwd);
+				
+		}
+		catch(Exception e)
+		{
+			
+				throw new Exception("Error at the class "+this.getClass().getSimpleName()+"  Password field "+e.getMessage());
+			
+		}
+		
+		return this;
+	}
+	public void clickSubmitButton() throws Exception
+	{
+		try{
+		
+			elementWait(clickSubmitButton);
+			driver.findElement(clickSubmitButton).click();
+		}
+		catch(Exception e)
+		{
+			throw new Exception("Error at the class "+this.getClass().getSimpleName()+"  Submit button "+e.getMessage());
+		}
+	}
 
 }

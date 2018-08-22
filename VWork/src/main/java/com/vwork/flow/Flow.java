@@ -1,18 +1,17 @@
 package com.vwork.flow;
 
-import com.initg.pages.LoginPage;
+import com.vwork.pages.LoginPage;
 
 public class Flow {
 
-	public void FirstSeleniumScriptTest()
+	public void FirstSeleniumScriptTest() throws Exception
 	{
 		loginPageEnterValuesAndSublit();
 	}
 	
-	public void loginPageEnterValuesAndSublit()
+	public void loginPageEnterValuesAndSublit() throws Exception
 	{
 		LoginPage lp=new LoginPage();
-		lp.getID();
-		//.getPassword().clickSubmitButton();
+		lp.enterUserID().enterPassword().clickSubmitButton();
 	}
 }

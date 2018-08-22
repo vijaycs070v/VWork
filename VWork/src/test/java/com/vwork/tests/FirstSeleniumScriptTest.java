@@ -18,7 +18,7 @@ public class FirstSeleniumScriptTest extends BaseTest{
 	}
 	
 	@Test
-	public void firstTest()
+	public void firstTest() throws Exception
 	{
 		Flow f=new Flow();
 		f.FirstSeleniumScriptTest();
