@@ -7,8 +7,8 @@ import com.vwork.datahandler.IDataReader;
 
 public class Base {
 	
-    static public IDataReader testdataReader;
-	public IDataReader configReader;
+	public static  IDataReader testdataReader;
+	public static IDataReader configReader;
 	public WebDriver driver;
 	public String datafilepath;
 	public String testcasename;

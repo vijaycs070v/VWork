@@ -5,18 +5,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.vwork.datahandler.DataReader;
+import com.vwork.enums.GlobalConstants;
 
 
 
 
 public class Utility {
-
-	static String pathPropertyFile="./src/com/initg/configuration/path.property";
 	static DataReader pathReader;
 	static WebDriver driver;
 	static{
 		try {
-			pathReader=new DataReader(pathPropertyFile);
+			pathReader=new DataReader(GlobalConstants.PATHPROPERTYFILE.getValue());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
