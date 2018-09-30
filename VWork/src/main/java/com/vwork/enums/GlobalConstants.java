@@ -1,7 +1,10 @@
 package com.vwork.enums;
 
 public enum GlobalConstants {
-PATHPROPERTYFILE("./src/com/initg/configuration/path.property");
+PATHPROPERTYFILE("./src/com/initg/configuration/path.property"),
+SAUCELAB_USERNAME(""),
+SAUCELAB_ACCESS_KEY("");
+
 	
 private	String value;
 private GlobalConstants(String value)

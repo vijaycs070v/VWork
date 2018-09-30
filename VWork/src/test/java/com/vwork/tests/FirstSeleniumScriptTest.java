@@ -1,5 +1,7 @@
 package com.vwork.tests;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,9 +13,10 @@ public class FirstSeleniumScriptTest extends BaseTest{
 
 	String tcname;
 	@BeforeMethod
-	public void setUp()
+	public void setUp() throws MalformedURLException
 	{
 		super.setUP(tcname);
+		launchBrowser();
 		
 	}
 	

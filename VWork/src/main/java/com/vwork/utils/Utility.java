@@ -27,17 +27,17 @@ public class Utility {
 			switch(browsertype)
 			{
 				case "CHROME":
-					System.setProperty("webdriver.chrome.driver", "");
+					System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 					driver=	new ChromeDriver();
 					break;
 					
 				case "FIREFOX":
-					System.setProperty("webdriver.gecko.driver", "");
+					System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 					driver=	new ChromeDriver();
 					break;
 					
 				case "IE":
-					System.setProperty("webdriver.ie.driver", "");
+					System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 					driver=	new ChromeDriver();
 					break;
 				default:

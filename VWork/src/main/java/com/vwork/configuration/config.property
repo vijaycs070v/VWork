@@ -2,3 +2,5 @@ URL=http://www.qa01.sampleproject.com
 Browser=CHROME
 RemoteExecution=false
 RetryRule=3
+SauceLabUsername=
+SauceLabToken=

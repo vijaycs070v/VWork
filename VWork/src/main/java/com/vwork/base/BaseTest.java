@@ -1,7 +1,10 @@
 package com.vwork.base;
 
 
+import java.net.MalformedURLException;
+
 import com.vwork.datahandler.DataReader;
+import com.vwork.utils.RemoteExecution;
 import com.vwork.utils.Utility;
 
 public  class BaseTest extends Base {
@@ -11,7 +14,7 @@ public BaseTest()
 	{
 		
 		configReader=new DataReader(Utility.getPath("configreader"));
-		//driver=Utility.getDriver(configReader.readData("Browser"));
+		
 	}
 
 public void setUP(String tcname)
@@ -36,9 +39,17 @@ public  void initTestDahaReader()
 	
 }
 
-public void initBrowserDriver(String browsername)
+public void launchBrowser() throws MalformedURLException
 {
+	if(configReader.readData("RemoteExecution").equalsIgnoreCase("true"))
+	{
+		driver=RemoteExecution.getRemoteWebDriver();
+	}
 	
+	else
+	{
+		driver=Utility.getDriver(configReader.readData("Browser"));
+	}
 }
 
 }
