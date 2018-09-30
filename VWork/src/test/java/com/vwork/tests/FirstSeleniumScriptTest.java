@@ -13,10 +13,11 @@ public class FirstSeleniumScriptTest extends BaseTest{
 
 	String tcname;
 	@BeforeMethod
-	public void setUp() throws MalformedURLException
+	public void setUp() throws Exception
 	{
 		super.setUP(tcname);
 		launchBrowser();
+		login();
 		
 	}
 	
