@@ -1,7 +1,5 @@
 package com.vwork.tests;
 
-import java.net.MalformedURLException;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

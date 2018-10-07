@@ -55,7 +55,7 @@ public  class BaseTest extends Base {
 		driver.manage().window().maximize();
 		driver.get(url);
 		
-		LoginPage loginPage=new LoginPage();
+		LoginPage loginPage=new LoginPage(driver);
 		loginPage.enterUserID().enterPassword().clickSubmitButton();
 	}
 
